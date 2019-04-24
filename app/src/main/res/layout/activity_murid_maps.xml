@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/transparant"
+    tools:context=".MuridMapsActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/panggil_guru_button"
+        android:layout_width="298dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/gradientStart"
+        android:fontFamily="@font/muli_bold"
+        android:text="Panggil Guru"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:background="@color/white"
+        android:layout_above="@+id/panggil_guru_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_driver"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"
+            android:layout_below="@+id/app_bar_settings"
+            android:layout_marginStart="15dp"
+            android:padding="3dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:id="@+id/name_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/profile_image_driver"
+            android:text="Nama Guru"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:fontFamily="@font/muli"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phone_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_guru"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/profile_image_driver"
+            android:fontFamily="@font/muli"
+            android:text="Telefon Guru"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/spesialis_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_guru"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/profile_image_driver"
+            android:fontFamily="@font/muli"
+            android:text="Spesialis Guru"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/telp"
+            android:id="@+id/telfonGuru"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/smsGuru"
+            android:layout_toLeftOf="@+id/telfonGuru"
+            android:src="@drawable/sms"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

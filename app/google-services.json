@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "519622609371",
+    "firebase_url": "https://kp-batan.firebaseio.com",
+    "project_id": "kp-batan",
+    "storage_bucket": "kp-batan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519622609371:android:121abee8ae942be6",
+        "android_client_info": {
+          "package_name": "com.rizki.gurukudev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519622609371-gjrr14ol55voj89r6f0q6coe9tapl84b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rizki.gurukudev",
+            "certificate_hash": "0668a915faae2490ca3bec6b7f52e9a7a86d4844"
+          }
+        },
+        {
+          "client_id": "519622609371-mevc440e6bs7baq5l489o0nm599n164g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClQVHG7uGma4xmRUhgmDJ837h9MX6dj04"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519622609371-mevc440e6bs7baq5l489o0nm599n164g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
